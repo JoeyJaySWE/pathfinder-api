@@ -6,6 +6,7 @@ import Login from './pages/Login';
 import Home from './pages/Home';
 import React from "react";
 import { Router } from "@reach/router";
+import TestApi from './pages/TestApi';
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
       <Router>
         <Login path='/admin'/>
         <Home path='/'/>
+        <TestApi path='/test'/>
       </Router>
       </header>
     </div>
