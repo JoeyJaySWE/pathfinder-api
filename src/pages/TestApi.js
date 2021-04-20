@@ -26,9 +26,9 @@ const TestApi = () => {
       fetch(`${rootUrl}&type=${itemType}&query=${searchQuery}`, {
         referrerPolicy: 'origin-when-cross-origin'
       })
-      .then((res) => {console.log(res); res.json()})
+      .then((res) =>  res.json())
       .then((json) => {
-
+          console.log(json);
           setSearchResult(json);
           if('ac' in json[0]){
             setResultType('armor');
