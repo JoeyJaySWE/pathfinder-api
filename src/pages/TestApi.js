@@ -25,8 +25,11 @@ const TestApi = () => {
       console.log(window.location);
       fetch(`${rootUrl}&type=${itemType}&query=${searchQuery}`, {
         headers: {
-          Origin: window.location.origin
-        }
+          Origin: window.location.origin,
+          credentials: "include"
+
+        },
+        referrerPolicy: 'origin-when-cross-origin'
       })
       .then((res) => res.json())
       .then((json) => {
