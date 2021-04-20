@@ -13,7 +13,7 @@ const TestApi = () => {
   
   
   React.useEffect(() => {
-    const rootUrl = `${process.env.REACT_APP_API_URL}test-api.php?api_key=${process.env.REACT_APP_API_KEY}`;
+    const rootUrl = `${process.env.REACT_APP_API_URL}test-api.php/?api_key=${process.env.REACT_APP_API_KEY}`;
     if (!searchQuery) {
       return;
     }
