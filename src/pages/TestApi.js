@@ -22,7 +22,7 @@ const TestApi = () => {
 
       
       
-      console.log(window.location);
+      console.log("text");
       fetch(`${rootUrl}&type=${itemType}&query=${searchQuery}`, {
         referrerPolicy: 'origin-when-cross-origin'
       })
