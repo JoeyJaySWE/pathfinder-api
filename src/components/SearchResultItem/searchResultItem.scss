@@ -1,0 +1,41 @@
+@import '../../style/variables.scss';
+
+details{
+    margin-top:30px;
+    display: flex;
+
+    
+    summary{
+        font-size: 1.7rem;
+        background-color: rgba(0,0,0,0.25);
+        border-radius: 25%;
+        padding: 10px;
+    }
+
+    .scrollsBg{
+        background-color: rgba(0,0,0,0.15);
+        box-sizing: content-box;
+        margin-top:-20px;
+        padding-top: 50px;
+        padding-bottom: 40px;
+
+        p{
+            max-width: 450px;
+            margin: auto;
+        }
+    }
+
+
+    strong{
+        display: inline-block;
+        width: auto;
+    }
+
+    &:last-child{
+        margin-bottom: 30px;
+    }
+}
+br{
+    flex-basis: 100%;
+    height: 0;
+}

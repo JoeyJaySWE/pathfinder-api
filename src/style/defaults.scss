@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Aclonica';
+    src: url('./fonts/Aclonica-Regular.woff2') format('woff2'),
+         url('./fonts/Aclonica-Regular.woff') format('woff');
+    font-style: normal;
+}
+
+body{
+    font-family: 'Papyrus';
+    background-image:radial-gradient(black white black);
+}
+h1, h2, h3{
+    font-family: 'Aclonica';
+}
+
+input{
+    margin-top: 15px;
+    border-radius: 10px;
+    height: 27px;
+    padding: 0px 10px;
+    
+    &.searchbar{
+        width:75%;
+        height: 40px;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+} 
