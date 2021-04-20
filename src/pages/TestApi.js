@@ -23,7 +23,11 @@ const TestApi = () => {
       
       
   
-      fetch(`${rootUrl}&type=${itemType}&query=${searchQuery}`)
+      fetch(`${rootUrl}&type=${itemType}&query=${searchQuery}`, {
+        headers: {
+          Origin: origin
+        }
+      })
       .then((res) => res.json())
       .then((json) => {
 
