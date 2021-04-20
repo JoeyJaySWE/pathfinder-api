@@ -26,13 +26,7 @@ const TestApi = () => {
       fetch(`${rootUrl}&type=${itemType}&query=${searchQuery}`, {
         referrerPolicy: 'origin-when-cross-origin'
       })
-      .then((res) => {
-        if (res.ok) {
-          return res.json();
-        } else {
-          throw new Error('Something went wrong');
-        }
-      })
+      .then((res) => res.json())
       .then((json) => {
 
           setSearchResult(json);
@@ -47,8 +41,6 @@ const TestApi = () => {
           }
         
         
-      }).catch((error) => {
-        console.log(error)
       });
       
     }
