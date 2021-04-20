@@ -22,26 +22,26 @@ const TestApi = () => {
 
       
       
-      console.log("text");
+      console.log(window.location);
       fetch(`${rootUrl}&type=${itemType}&query=${searchQuery}`, {
         referrerPolicy: 'origin-when-cross-origin'
       })
-      .then((res) => console.log(res));
-      // .then((json) => {
+      .then((res) => {console.log(res); res.json()})
+      .then((json) => {
 
-      //     setSearchResult(json);
-      //     if('ac' in json[0]){
-      //       setResultType('armor');
-      //     }
-      //     if('damge' in json[0]){
-      //       setResultType('weapons');
-      //     }
-      //     if('desc' in json[0]){
-      //       setResultType('items');
-      //     }
+          setSearchResult(json);
+          if('ac' in json[0]){
+            setResultType('armor');
+          }
+          if('damge' in json[0]){
+            setResultType('weapons');
+          }
+          if('desc' in json[0]){
+            setResultType('items');
+          }
         
         
-      // });
+      });
       
     }
 
