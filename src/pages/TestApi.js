@@ -22,10 +22,10 @@ const TestApi = () => {
 
       
       
-      console.log(window.location.origin);
+      console.log(window.location);
       fetch(`${rootUrl}&type=${itemType}&query=${searchQuery}`, {
         headers: {
-          Origin: origin
+          Origin: window.location.origin
         }
       })
       .then((res) => res.json())
