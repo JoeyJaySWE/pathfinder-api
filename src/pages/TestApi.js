@@ -22,7 +22,7 @@ const TestApi = () => {
 
       
       
-  
+      console.log(window.location.origin);
       fetch(`${rootUrl}&type=${itemType}&query=${searchQuery}`, {
         headers: {
           Origin: origin
