@@ -6,7 +6,7 @@ import SearchResultItem from '../components/SearchResultItem';
 const Home = () => {
   
   const [searchResult, setSearchResult] = React.useState([]);
-  const [searchQuery, setSearchQuery] = React.useState("");
+  const [searchQuery, setSearchQuery] = React.useState("*");
   const [itemType, setItemType] = React.useState("");
   const [isClicked, setClicked] = React.useState(false);
   const [resultType, setResultType] = React.useState('');
